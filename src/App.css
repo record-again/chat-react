@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+body {
+  background-color: #57d49a !important;
+}
+.people-list {
+  overflow-y: hidden;
+}
+.people {
+  position: relative;
+  height: 10%;
+  border-bottom: solid 1px #c3c2c2;
+}
+.people:first-child {
+  border-top: solid 1px #c3c2c2;
+}
+.people:hover {
+  background-color: #8eacee;
+  cursor: pointer;
+  transition: all 1s;
+}
+.people img {
+  width: 18%;
+}
+.people .status {
+  position: absolute;
+  top: 7%;
+  right: 2%;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head-menu {
+  font-size: 20px;
+}
+.head-menu i:hover {
+  cursor: pointer;
+}
+.head-menu .list-group {
+  position: absolute;
+  right: 9vw;
+}
+.head-menu .list-group-item:hover {
+  background-color: #e68eee;
+  cursor: pointer;
+  transition: all 1s;
+}
+.messages-panel {
+  height: 75vh;
+  overflow-y: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.messages-panel:hover {
+  overflow-y: scroll;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.message {
+  display: inline-block;
+  width: max-content;
 }
-
-.App-link {
-  color: #61dafb;
+.chat-type i {
+  font-size: 25px;
+  margin-right: 4px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chat-type .attachment:hover {
+  cursor: pointer;
+}
+.chat-type input {
+  border: 1px solid gray;
+  height: 40px;
+  width: 100%;
+  border-radius: 3px;
+}
+.type-container {
+  position: relative;
+}
+.type-container i {
+  position: absolute;
+  right: 8px;
+  background: lightgrey;
+  height: 40px;
+  padding: 0 14px;
+  color: #1cc21c;
+}
+.type-container i:hover {
+  cursor: pointer;
+}
+.modal-box {
+  top: 20vh;
+  left: 35vw;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 3px;
 }
